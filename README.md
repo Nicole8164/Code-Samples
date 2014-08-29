@@ -6,4 +6,4 @@ ParseLogs Folder:
 	This is a self contained sample system that parses log files (sample log files provided) when requested verb/noun combinations are searched from a user interface.
 	Once parsed the information stored in the log files are displayed to a user in table format.
 	
-	Live verison of this can be found at: http://samples.nicolefamulare.com/parseLogs/index.html
+	Live version of this can be found at: http://samples.nicolefamulare.com/parseLogs/index.html
