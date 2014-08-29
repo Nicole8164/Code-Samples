@@ -2,9 +2,7 @@ $(document).ready
 (
     function() 
     {
-        //getArtists();
-        //getAdTable();
-        var api = "http://samples.nicolefamulare.com/"
+        var api = "http://samples.nicolefamulare.com/parseLogs/"
         $("#verb").change(function()
         {
             var verb = $("select#verb").val();
@@ -24,8 +22,6 @@ $(document).ready
                 $("select#noun").prop("disabled", true);
             }
             $("option.choose").prop("selected",true);
-
-
         });
 
         $("#searchButton").click(function(e)
@@ -43,7 +39,8 @@ $(document).ready
                     success: function(response)
                     {   
                         var results = $.parseJSON(response);
-                        if(!$.isEmptyObject(results))
+                        console.log(results);
+                        if(!$.isEmptyObject(results['content']))
                         {
                             var header = [];
                             var headerNames =Object.keys(results['content'][0]);
@@ -71,52 +68,20 @@ $(document).ready
 
                                 $(".searchTable table tbody").html(Mark.up(search_results_watch, results));
                             }
+                            $("#error").css("display","none");
                         }
                         else
                         {
+                            $("#error").html("<p style='color:red;'>Sorry, an error occurred. Please try again.</p>")
+                            $("#error").css("display","block");
                             return false;
                         }
                     },
                    
                 }
             );
-            e.preventDefault();
+            e.preventDefault(); //Stops ajax call from reloading page when complete
         });
-
-       /* $(".buttonAdd").click(function() 
-        {
-            var artist = $("select.selectArtists").val();
-            var campaignName = $("input#name").val();
-            var image_url = $('input#image_url').val();
-            var dataString = 'artist='+ artist + '&campaignName=' + campaignName + '&image_url=' + image_url + '&image_link=link';
-            $.ajax
-            ({
-                type: "POST",
-                url: api + "/debug/cms/marketing/add",
-                data: dataString,
-                success: function(response) 
-                {
-                    var message = $.parseJSON(response);
-                    if(message.success)
-                    {
-                        $("#addAds")[0].reset();
-                        alert(message.success);
-                        getAdTable();  
-                        $('#addAds').css("display","none");
-                        $('#updateAd').css("display","none");      
-                    }
-                    else
-                    {
-                        alert(message.error);
-                    }
-                }
-            });
-            return false;
-        });
-        $("button.addNew").click(function() 
-        {
-            $('#addAds').css("display","block");
-        });*/
     }
 );
 
