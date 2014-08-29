@@ -23,10 +23,9 @@ function parse()
 		$content = file_get_contents($file);
 		$lines = array_filter(explode ("\n", $content)); 
 
-
-		
 		foreach ($lines as $line) 
 		{ 
+			//Need to flatten array to format information to fit in table structure
 			$flattenArray=array();
 			$cooked = json_decode ($line, true);
 			$flattenArray = \Tools\Arrays::flatten($cooked);

@@ -1,5 +1,6 @@
 /*
- Creating the templates used in index.php to generate tables based off search results. There's are formated to work with mark.js
+ Creating the templates used in index.html to generate tables based off search results. 
+ These are formated to work with markup.js
 */
 
 var search_results_header = '{{titles}}<th>{{.|topcase}}</th>{{/titles}}';

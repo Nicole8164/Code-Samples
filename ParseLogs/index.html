@@ -17,10 +17,10 @@
 			<div class="row">
 				<div class="col-lg-10">
 					<h1>Select Analytic Combination To Search Log Files</h1>
-				</div>
-			</div>
-		</div>
-	</div>
+				</div><!--.col-lg-10-->
+			</div><!--.row-->
+		</div><!--.container-->
+	</div><!--.title-->
 
 	<div class="searchForm">
 		<div class="container">
@@ -28,72 +28,65 @@
 				<div class="col-lg-10">
 					<form id="searchOptions" class="form-inline" role="form">
 						<div class="form-group">
-			                    <label class="sr-only">Choose Verb</label>
-			                    <div class="input-group">
-			                    	<select id="verb" class="form-control" onChange="check(this);">
-							       			<option value="choose">Choose Verb</option>
-					                    	<option value="login">Login</option>
-					                    	<option value="sign_up">Sign Up</option>
-					                    	<option value="watch">Watch</option>
-							      </select>
-				                </div>
-			            </div>
-
+		                    <label class="sr-only">Choose Verb</label>
+		                    <div class="input-group">
+		                    	<select id="verb" class="form-control" onChange="check(this);">
+						       			<option value="choose_verb">Choose Verb</option>
+				                    	<option value="login">Login</option>
+				                    	<option value="sign_up">Sign Up</option>
+				                    	<option value="watch">Watch</option>
+						      </select>
+			                </div><!--.input-group-->
+			            </div><!--.form-grou[-->
 			            <div class="form-group">
-			                    <label class="sr-only">Choose Noun</label>
-							    <div class="input-group">
-				                    <select id="noun" disabled="disabled" class="form-control">
-				                    	<option class="choose">Choose Noun</option>
-				                    	<option class="user" value="user">User</option>
-				                    	<option class="video" value="video">Video</option>
-				                    </select>
-				                </div>
-			            </div>
-
+		                    <label class="sr-only">Choose Noun</label>
+						    <div class="input-group">
+			                    <select id="noun" disabled="disabled" class="form-control">
+			                    	<option class="choose_noun" value="choose_noun">Choose Noun</option>
+			                    	<option class="user" value="user">User</option>
+			                    	<option class="video" value="video">Video</option>
+			                    </select>
+			                </div><!--.input-group-->
+			            </div><!--.form-group-->
 			            <div class="form-group">
 				            <div class="col-sm-offset-2">
-					            <button  class="btn btn-primary btn-s" id="searchButton">Search</button> 
+					            <button id="searchButton" class="btn btn-primary btn-s" disabled="disabled">Search</button> 
 				            </div>
-				        </div>
+				        </div><!--.form-group-->
 			        </form>
-			    </div>
-			</div>
-		</div>
-	</div>
+			    </div><!--.col-lg-10-->
+			</div><!--.row-->
+		</div><!--.container-->
+	</div><!--.searchForm-->
 
 	<div class="searchResults">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10">
 					<div class="searchTable" style="display:none;">
+						<!--Complete table created by templates in layout_markup.js and layout.js-->
 						<table class="table table-striped table-bordered">
 							<thead>
-								<tr>
-								</tr>
+								<tr></tr>
 							</thead>
-
 							<tbody >
-
-											
 							</tbody>
-							
 						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</div><!--.searchTable-->
+				</div><!--.col-lg-10-->
+			</div><!--.row-->
+		</div><!--.container-->
+	</div><!--.searchResults-->
 
 	<div class="error">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10">
 					<div id="error" style="display:none;"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
+				</div><!--.col-lg-10-->
+			</div><!--.row-->
+		</div><!--.container-->
+	</div><!--.error-->
 </body>
+
 </html>
