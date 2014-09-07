@@ -2,7 +2,7 @@ $(document).ready
 (
     function() 
     {
-        var api = "http://sampledev.nicolefamulare.com/"
+        var api = "http://samples.nicolefamulare.com/parseLogs/"
 
         /*
          Only certain nouns are available for each selected verb. 
