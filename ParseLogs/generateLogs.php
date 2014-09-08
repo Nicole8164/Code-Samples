@@ -7,14 +7,8 @@
 
 require_once("ThirdParty/generateEmail.php");
 
-class Log{
+class Login{
 	public $noun = "user";
-	public $payload = array();
-	public $time;
-	public $verb;
-}
-
-class Login extends Log{
 	public $verb = 'login';
 
 	function __construct($time,$logins,$user_id){
@@ -38,7 +32,8 @@ class Login extends Log{
 
 }
 
-class SignUp extends Log{
+class SignUp{
+	public $noun = "user";
 	public $verb = 'sign_up';
 
 	function __construct($time, $email, $name, $user_id){
@@ -65,7 +60,7 @@ class SignUp extends Log{
 }
 
 
-class Watch extends Log{
+class Watch{
 	public $noun = "video";
 	public $verb = "watch";
 
@@ -192,8 +187,7 @@ for($i=0;$i<=20;$i++)//create 21 new records
 		fwrite($filePath, $data . "\n");
 	}
 }
+
 fclose($filePath);
-
-
 
 ?>

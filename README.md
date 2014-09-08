@@ -6,4 +6,4 @@ Parse Logs
 - Imagine having a system that writes analytic data using verb/noun combinations to log files.
 - This is a self contained sample system that parses log files (sample log files provided) when requested verb/noun combinations are searched from a user interface.
 - Once parsed the information stored in the log files is displayed to a user in table format.
-- You can find a [demo here](http://samples.nicolefamulare.com/parseLogs/index.html)
+- You can find a [demo here](http://samples.nicolefamulare.com/index.html)
