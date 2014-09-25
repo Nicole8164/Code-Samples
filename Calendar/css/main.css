@@ -1,0 +1,80 @@
+body{
+	font-family: Arial,sans-serif;
+	font-size: 12px;
+}
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	width: 640px;
+}
+.header-wrap{
+	width: 640px;
+	margin-top: 15px;
+}
+.headerTitle h1{
+	font-weight: bold;
+	font-size: 16px;
+}
+.textbox{
+	margin-right: auto;
+	margin-left: auto;
+	width: 150px;
+}
+.calendar-wrap{
+	border: 1px solid #CCC;
+	border-radius: 5px;
+	float: left;
+	width: 640px;
+	margin-top: 15px;
+	height: 210px;
+}
+.table{
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 20px;
+}
+td{
+	vertical-align: middle;
+	padding: 3px;
+}
+/*Calendar title*/
+.title h2{
+	text-align: center;
+	font-size: 13px;
+	float: left;
+	width: 95%;
+}
+.calendar{
+	float: left;
+	padding: 1%;
+	width: 200px;
+}
+.not_current_month{
+	color: #939393;
+}
+a.nextMonth{
+	text-align: right;
+	float: left;
+	margin-top: 5%;
+	cursor: pointer;
+	color: black;
+	position: relative;
+	right: 10px;
+}
+a.prevMonth{
+	text-align: left;
+	float:left;
+	margin-top: 5%;
+	cursor: pointer;
+	color: black;
+	position: relative;
+	left: 10px;
+}
+/*actively clicked td cell*/
+.active{
+	background-color: #626192;
+	border-radius: 3px;
+	color:white;
+}

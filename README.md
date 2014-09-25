@@ -7,3 +7,8 @@ Parse Logs
 - This is a self contained sample system that parses log files (sample log files provided) when requested verb/noun combinations are searched from a user interface.
 - Once parsed the information stored in the log files is displayed to a user in table format.
 - You can find a [demo here](http://samples.nicolefamulare.com/index.html)
+
+
+Calendar
+--------
+Custom 3 month Javascript calendar widget
